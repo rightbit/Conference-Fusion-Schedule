@@ -1,0 +1,102 @@
+/* Header background color */
+.bg-background-main {
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.bg-gray-600 {
+    background-color: rgba(0,0,0,0.06);
+}
+
+.bg-gray-300 {
+    background-color: rgba(0,0,0,0.03);
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+/* Make the text on yellow notifications more readable */
+.v--default-css .c-toast--warning {
+    color: #000000 !important;
+}
+
+
+/* Keep stuff in the middle of tables */
+.table > tbody > tr > td {
+    vertical-align: middle;
+}
+
+/* Fixed, scrollable tables */
+
+.table-scrollable-container {
+    max-height: 85vh;
+    overflow-y: scroll;
+    margin-bottom:20px;
+}
+
+.table-scrollable td, th {
+    min-width: 150px;
+}
+
+.table-scrollable  tr > :first-child {
+    position: -webkit-sticky;
+    position: sticky;
+    left:0px;
+    min-width: 50px;
+    width:50px;
+    z-index: 100;
+}
+
+.table-scrollable > thead {
+    position: sticky;
+    top: 0px;
+    overflow-x: scroll;
+    z-index: 100;
+}
+
+/* Turn off the "Current" span on pagination */
+.sr-only {
+    display:none;
+}
+
+/* Smaller font sizes */
+.fs-90 {
+    font-size: .9em;
+}
+.fs-80 {
+    font-size: .8em;
+}
+
+/* Extra width sizes */
+.w-30 {
+    width: 30% !important;
+}
+
+.w-33 {
+    width: 33% !important;
+}
+
+.w-66 {
+    width: 66% !important;
+}
+
+
+.card-title::first-letter {
+    text-transform:capitalize;
+}
+
+
+/* social image module */
+.social-overlay {
+    position: relative;
+    z-index: 100;
+}
+
+.social-profile {
+    position: absolute;
+    top: 65px;
+    left: 440px;
+    width: 200px;
+    z-index: 0;
+}
